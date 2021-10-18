@@ -31,7 +31,7 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-  var nav = document.querySelector('nav');
+var nav = document.querySelector('nav');
     
           window.addEventListener('scroll', function () {
             
