@@ -1,4 +1,4 @@
 # transparentNavbar
 
 In this Website you can see a transparent navbar paired with a coverpicture. 
-Navbar on a small device won't work aswell as the login and the signup page (just for a good look :D).
+Navbar now working. Added a smooth scroll for the navbar.
