@@ -34,14 +34,48 @@ anime.timeline({loop: true})
 var nav = document.querySelector('nav');
     
           window.addEventListener('scroll', function () {
-            
-            if (window.pageYOffset > 100) {
+          
+            if (window.pageYOffset > 0) {
               nav.classList.add('bg-white', 'shadow');
               $(".nav-link").css("color", "black");
+              $(".navbar-toggler").css("color", "black");
+              $(".navbar-toggler").css("border-color", "black");
+              $(".fas").css("color", "black");
               $(".navbar-brand").css("color", "black");
-            } else if (window.pageYOffset < 100){
+            } else if (window.pageYOffset < 10){
               nav.classList.remove('bg-white', 'shadow');
               $(".nav-link").css("color", "white");
+              $(".navbar-toggler").css("color", "white");
+              $(".navbar-toggler").css("border-color", "white");
+              $(".fas").css("color", "white");
               $(".navbar-brand").css("color", "white");
             }
+            
           });
+
+window.addEventListener('resize', function(event){
+            
+  const mq = window.matchMedia( "(min-width: 770px)" );
+
+  if (mq.matches) {
+    nav.classList.remove('bg-white', 'shadow');
+    $(".nav-link").css("color", "white");
+    $(".navbar-toggler").css("color", "white");
+    $(".navbar-toggler").css("border-color", "white");
+    $(".fas").css("color", "white");
+    $(".navbar-brand").css("color", "white");
+  } else {
+    nav.classList.add('bg-white', 'shadow');
+    $(".nav-link").css("color", "black");
+    $(".navbar-toggler").css("color", "black");
+    $(".navbar-toggler").css("border-color", "black");
+    $(".fas").css("color", "black");
+    $(".navbar-brand").css("color", "black");
+  }
+});        
+       
+            
+
+          
+          
+        
